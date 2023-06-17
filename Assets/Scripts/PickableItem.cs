@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PickableItem : MonoBehaviour
 {
-    public ScriptableWeapon weapon;
+    public ScriptableItem item;
 
     SpriteRenderer sRenderer;
 
@@ -12,6 +12,13 @@ public class PickableItem : MonoBehaviour
     {
         sRenderer = GetComponent<SpriteRenderer>();
 
-        sRenderer.sprite = weapon.weaponSprite;
+        sRenderer.sprite = item.itemSprite;
+    }
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        InventoryManager.instance.AddItem(item);
+
+        Destroy(gameObject);
     }
 }

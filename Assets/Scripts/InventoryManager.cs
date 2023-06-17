@@ -7,28 +7,67 @@ public class InventoryManager : MonoBehaviour
 {
     public static InventoryManager instance;
 
-    public ScriptableWeapon[] weapons;
+    public ScriptableItem[] weapons;
     public Text[] weaponsNames;
     public Image[] weaponsSprites;
+
+    public ScriptableItem[] shields;
+    public Text[] shieldsNames;
+    public Image[] shieldsSprites;
+
+    public ScriptableItem[] typeItem;
+    public Text[] typeNames;
+    public Image[] typeSprites;
 
     void Awake()
     {
         instance  = this;
     }
 
-    public void AddWeapon(ScriptableWeapon weapon)
+    public void AddItem(ScriptableItem item)
     {
-        for (int i = 0; i < weapons.Length; i++)
+        /*if(item.itemType == ScriptableItem.ItemType.Weapon)
         {
-            if(weapons[i] == null)
+            for (int i = 0; i < weapons.Length; i++)
             {
-                weapons[i] = weapon;
-                weaponsNames[i].text = weapon.weaponName;
-                weaponsSprites[i].sprite = weapon.weaponSprite;
+                if(weapons[i] == null)
+                {
+                    weapons[i] = item;
+                    weaponsNames[i].text = item.itemName;
+                    weaponsSprites[i].sprite = item.itemSprite;
 
-                return;
+                    return;
+                }
             }
-        }
-    }
+        }*/
 
+        
+        /*for (int i = 0; i < weapons.Length; i++)
+        {
+            if(item.itemType == ScriptableItem.ItemType.Weapon)
+            {
+                if(weapons[i] == null)
+                {
+                    weapons[i] = item;
+                    weaponsNames[i].text = item.itemName;
+                    weaponsSprites[i].sprite = item.itemSprite;
+
+                    return;
+                }
+            }
+            else
+            {
+                if(shields[i] == null)
+                {
+                    shields[i] = item;
+                    shieldsNames[i].text = item.itemName;
+                    shieldsSprites[i].sprite = item.itemSprite;
+
+                    return;
+                }
+            }
+        }*/
+
+        
+    }
 }

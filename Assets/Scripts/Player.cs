@@ -13,7 +13,7 @@ public class Player : MonoBehaviour
         transform.position += Vector3.right * horizontal * 5 * Time.deltaTime;
     }
 
-    void OnTriggerEnter2D(Collider2D other)
+    /*void OnTriggerEnter2D(Collider2D other)
     {
         PickableItem pickable = other.gameObject.GetComponent<PickableItem>();
         if(pickable != null)
@@ -22,5 +22,5 @@ public class Player : MonoBehaviour
 
             Destroy(other.gameObject);
         }
-    }
+    }*/
 }

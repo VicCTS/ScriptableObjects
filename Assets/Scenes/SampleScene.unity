@@ -753,7 +753,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f728fa4f5f69f846818cc07826b712f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weapon: {fileID: 11400000, guid: 75f3e84b664e8b24893b744a64b925be, type: 2}
+  item: {fileID: 11400000, guid: 6722fb0c45bae7a4db047049170d2cf3, type: 2}
 --- !u!212 &356402641
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1035,6 +1035,30 @@ MonoBehaviour:
   - {fileID: 1855328730}
   - {fileID: 878544129}
   - {fileID: 862625666}
+  shields: []
+  shieldsNames: []
+  shieldsSprites: []
+  typeItem:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  typeNames:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  typeSprites:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!4 &558839184
 Transform:
   m_ObjectHideFlags: 0
@@ -1135,7 +1159,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f728fa4f5f69f846818cc07826b712f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weapon: {fileID: 11400000, guid: 94588b13e49f75645a4a61ac98a744ec, type: 2}
+  item: {fileID: 11400000, guid: 6722fb0c45bae7a4db047049170d2cf3, type: 2}
 --- !u!212 &768315058
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2024,7 +2048,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f728fa4f5f69f846818cc07826b712f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weapon: {fileID: 11400000, guid: 9b8b063194c6d4942893db17765a98b2, type: 2}
+  item: {fileID: 11400000, guid: 6722fb0c45bae7a4db047049170d2cf3, type: 2}
 --- !u!212 &1839681814
 SpriteRenderer:
   m_ObjectHideFlags: 0
