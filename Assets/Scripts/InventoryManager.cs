@@ -8,16 +8,15 @@ public class InventoryManager : MonoBehaviour
     public static InventoryManager instance;
 
     public ScriptableItem[] weapons;
+
     public Text[] weaponsNames;
+    public Text[] weaponsDamage;
     public Image[] weaponsSprites;
+    //public InventorySlot[] weaponSlot;
 
-    public ScriptableItem[] shields;
+    /*public ScriptableItem[] shields;
     public Text[] shieldsNames;
-    public Image[] shieldsSprites;
-
-    public ScriptableItem[] typeItem;
-    public Text[] typeNames;
-    public Image[] typeSprites;
+    public Image[] shieldsSprites;*/
 
     void Awake()
     {
@@ -26,8 +25,7 @@ public class InventoryManager : MonoBehaviour
 
     public void AddItem(ScriptableItem item)
     {
-        /*if(item.itemType == ScriptableItem.ItemType.Weapon)
-        {
+
             for (int i = 0; i < weapons.Length; i++)
             {
                 if(weapons[i] == null)
@@ -39,12 +37,10 @@ public class InventoryManager : MonoBehaviour
                     return;
                 }
             }
-        }*/
 
-        
-        /*for (int i = 0; i < weapons.Length; i++)
+        /*if(item.itemType == ScriptableItem.ItemType.Weapon)
         {
-            if(item.itemType == ScriptableItem.ItemType.Weapon)
+            for (int i = 0; i < weapons.Length; i++)
             {
                 if(weapons[i] == null)
                 {
@@ -52,10 +48,16 @@ public class InventoryManager : MonoBehaviour
                     weaponsNames[i].text = item.itemName;
                     weaponsSprites[i].sprite = item.itemSprite;
 
+                    weaponSlot[i].slotItem = item;
+                    weaponSlot[i].slotNumber = i;
+
                     return;
                 }
             }
-            else
+        }*/
+        /*else if(item.itemType == ScriptableItem.ItemType.Shield)
+        {
+            for (int i = 0; i < shields.Length; i++)
             {
                 if(shields[i] == null)
                 {
@@ -67,7 +69,6 @@ public class InventoryManager : MonoBehaviour
                 }
             }
         }*/
-
         
     }
 }
